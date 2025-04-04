@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Availability</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="scripts/app.js" defer></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Current Availability</h1>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:underline">Home</a>
+                <a href="schedule.html" class="hover:underline">Schedule</a>
+                <a href="search.html" class="hover:underline">Search</a>
+                <a href="availability.html" class="hover:underline font-bold">Availability</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Current Time Display -->
+    <div class="container mx-auto mt-6 px-4">
+        <div class="bg-white p-4 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-bold mb-2">Current Time: <span id="current-time" class="text-blue-600"></span></h2>
+            <div class="relative mt-4">
+                <input type="text" id="availability-search" placeholder="Search teachers..." 
+                       class="w-full p-3 pl-10 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm">
+                <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+        </div>
+
+        <!-- Availability Cards -->
+        <div id="availability-cards" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white p-6 text-center mt-8">
+        <p>© 2023 Teacher Schedule Checker</p>
+    </footer>
+</body>
+</html>
