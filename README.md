@@ -1,10 +1,9 @@
 
-Built by https://www.blackbox.ai
 
 ---
-
-```markdown
-# Teacher Schedule Checker
+ Teacher Schedule Checker
+```
+#
 
 ## Project Overview
 The Teacher Schedule Checker is a web application designed to provide real-time updates on faculty availability and schedules. Users can view the schedules of teachers, search for specific faculty, and get an overview of current availability from 8 AM to 5 PM. The application aims to facilitate communication and planning for both students and faculty members.
